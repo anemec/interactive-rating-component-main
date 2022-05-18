@@ -10,7 +10,8 @@ submitBtn.addEventListener('click', () => {
   target.innerText = `You selected ${ratingNumber} out of 5`;
 });
 
-function setRating(rating) {
+function setRating(event, rating) {
+  //   event.classList.add('');
   ratingNumber = rating;
   console.log(ratingNumber);
 }

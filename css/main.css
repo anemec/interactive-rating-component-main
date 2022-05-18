@@ -744,6 +744,21 @@ html {
   color: hsl(25 97% 53% / var(--tw-text-opacity));
 }
 
+.focus\:bg-whiteNeutral:focus {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.focus\:bg-lightGreyNeutral:focus {
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 12% 63% / var(--tw-bg-opacity));
+}
+
+.focus\:text-whiteNeutral:focus {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
 @media (hover: hover) {
   .hover-hover\:text-whiteNeutral {
     --tw-text-opacity: 1;
