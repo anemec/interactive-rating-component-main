@@ -10,6 +10,9 @@ module.exports = {
         darkBlueNeutral: 'hsl(213, 19%, 18%)',
         veryDarkBlueNeutral: 'hsl(216, 12%, 8%)',
       },
+      screens: {
+        'hover-hover': { raw: '(hover: hover)' },
+      },
     },
   },
   plugins: [],
