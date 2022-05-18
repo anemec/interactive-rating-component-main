@@ -676,3 +676,10 @@ html {
   --tw-text-opacity: 1;
   color: hsl(25 97% 53% / var(--tw-text-opacity));
 }
+
+@media (hover: hover) {
+  .hover-hover\:text-whiteNeutral {
+    --tw-text-opacity: 1;
+    color: hsl(0 0% 100% / var(--tw-text-opacity));
+  }
+}
