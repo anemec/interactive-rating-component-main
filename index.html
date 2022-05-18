@@ -39,7 +39,7 @@
         id="component"
         class="container flex flex-col p-8 text-white mx-auto max-w-md bg-gradient-to-b from-darkBlueNeutral/80 to-darkBlueNeutral/50 h-auto rounded-3xl"
       >
-        <div>
+        <div id="rating-card">
           <div
             id="star-icon"
             class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/95"
@@ -55,6 +55,7 @@
             <ul class="flex justify-between">
               <li>
                 <button
+                  onclick="setRating(1)"
                   class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover-hover:text-whiteNeutral hover:bg-orangePrim"
                 >
                   1
@@ -62,6 +63,7 @@
               </li>
               <li>
                 <button
+                  onclick="setRating(2)"
                   class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
                 >
                   2
@@ -69,6 +71,7 @@
               </li>
               <li>
                 <button
+                  onclick="setRating(3)"
                   class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
                 >
                   3
@@ -76,6 +79,7 @@
               </li>
               <li>
                 <button
+                  onclick="setRating(4)"
                   class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
                 >
                   4
@@ -83,6 +87,7 @@
               </li>
               <li>
                 <button
+                  onclick="setRating(5)"
                   class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
                 >
                   5
@@ -91,21 +96,35 @@
             </ul>
           </div>
           <button
+            id="submit"
             class="py-3 mt-8 w-full rounded-full bg-orangePrim hover:bg-whiteNeutral hover:text-orangePrim"
           >
             Submit
           </button>
         </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <div id="submitted-card" class="hidden flex flex-col items-center">
+          <div>
+            <img src="./images/illustration-thank-you.svg" alt="" />
+          </div>
+          <div
+            class="mt-6 py-1 px-4 bg-darkBlueNeutral/90 rounded-full h-auto text-sm text-orangePrim"
+          >
+            <p id="target"></p>
+          </div>
+          <p class="mt-8 text-2xl">Thank You!</p>
+          <p class="text-center mt-2 text-lightGreyNeutral">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </section>
     </div>
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
 
     <!-- Add rating here -->
     <!-- You selected
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
+    out of 5 Thank you!  -->
 
     <!-- Thank you state end -->
 
@@ -115,5 +134,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
