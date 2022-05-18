@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="grid place-items-center h-screen bg-veryDarkBlueNeutral">
+      <section
+        id="component"
+        class="container flex flex-col p-8 text-white mx-auto max-w-md bg-gradient-to-b from-darkBlueNeutral/80 to-darkBlueNeutral/50 h-auto rounded-3xl"
+      >
+        <div>
+          <div
+            id="star-icon"
+            class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/95"
+          >
+            <img src="images/icon-star.svg" alt="" />
+          </div>
+          <h1 class="text-3xl mt-10 text-whiteNeutral">How did we do?</h1>
+          <p class="mt-4 text-mediumGreyNeutral">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div id="ratings" class="mt-6 mr-6 text-lightGreyNeutral">
+            <ul class="flex justify-between">
+              <li>
+                <button
+                  class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
+                >
+                  1
+                </button>
+              </li>
+              <li>
+                <button
+                  class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
+                >
+                  2
+                </button>
+              </li>
+              <li>
+                <button
+                  class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
+                >
+                  3
+                </button>
+              </li>
+              <li>
+                <button
+                  class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
+                >
+                  4
+                </button>
+              </li>
+              <li>
+                <button
+                  class="flex items-center justify-center h-14 w-14 rounded-full bg-darkBlueNeutral/80 hover:text-whiteNeutral hover:bg-orangePrim"
+                >
+                  5
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button
+            class="py-3 mt-8 w-full rounded-full bg-orangePrim hover:bg-whiteNeutral hover:text-orangePrim"
+          >
+            Submit
+          </button>
+        </div>
+      </section>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <!-- Add rating here -->
+    <!-- You selected
+    out of 5 Thank you! We appreciate you taking the time to give a rating. If
+    you ever need more support, don’t hesitate to get in touch! -->
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
